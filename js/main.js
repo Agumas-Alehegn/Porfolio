@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   typeWriter(); // Start the typing animation
 });
+
 // navbar scroll
 window.addEventListener("scroll", function () {
   var navbar = document.querySelector(".navbar");
@@ -70,14 +71,14 @@ document
     });
 
     if (response.ok) {
-      successElement.textContent = "Your message has been sent!";
+      successElement.textContent = "Your Email has been sent!";
       setTimeout(() => {
         successElement.textContent = "";
       }, 2000);
       form.reset();
     } else {
       failureElement.textContent =
-        "Oops! There was a problem submitting your form.";
+        "Oops! There was a problem sending your email.";
       setTimeout(() => {
         failureElement.textContent = " ";
       }, 2000);
@@ -85,6 +86,5 @@ document
   });
 
 window.addEventListener("load", function () {
-  // Hide the spinner once the page is fully loaded
   document.querySelector(".spinner").style.display = "none";
 });
