@@ -240,7 +240,7 @@
                 data-aos-duration="2000"
               >
                 <b> Website: </b
-                ><a href="https://www.agumas.pro.et">www.agumas.pro.et</a>
+                ><a href="https://agumas.pro.et/">https://agumas.pro.et/</a>
               </li>
               <li
                 class="col-12 col-md-5 px-1 text-break"
@@ -741,14 +741,14 @@
             data-aos="flip-right"
             data-aos-duration="1500"
           >
-            <form
+            <!-- <form
               id="contact_form"
               name="contact"
-              class="py-sm-2 px-sm-4 rounded-2 contact-form"
+            
               method="POST"
               data-netlify="true"
             >
-              <!-- Required hidden input for Netlify Forms -->
+               
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="redirect" value="/thank-you.html" />
 
@@ -791,6 +791,38 @@
               >
                 Send
               </button>
+            </form>  -->
+            <form
+              action="https://formspree.io/f/xeookdqa"
+              method="POST"
+              class="py-sm-2 px-sm-4 rounded-2 contact-form"
+            >
+              <input
+                class="input"
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                class="input"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                class="input"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button
+                class="form-btn col-12 btn p-2 fw-semibold fs-4"
+                type="submit"
+              >
+                Send
+              </button>
             </form>
           </div>
           <div class="col-md-6" data-aos="flip-right" data-aos-duration="1500">
@@ -819,8 +851,11 @@
               </div>
               <div class="my-3">
                 <i class="bi bi-globe pe-3"></i>
-                <a a class="text-decoration-none text-dark" href="#"
-                  >agumas.com</a
+                <a
+                  a
+                  class="text-decoration-none text-dark"
+                  href="https://agumas.pro.et"
+                  >https://agumas.pro.et</a
                 >
               </div>
             </div>
