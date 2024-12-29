@@ -52,3 +52,39 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("navbar-fixed");
   }
 });
+const successElement = document.getElementById("success");
+const failureElement = document.getElementById("failure");
+document
+  .getElementById("contact_form")
+  .addEventListener("submit", async function (event) {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      successElement.textContent = "Your message has been sent!";
+      setTimeout(() => {
+        successElement.textContent = "";
+      }, 2000);
+      form.reset();
+    } else {
+      failureElement.textContent =
+        "Oops! There was a problem submitting your form.";
+      setTimeout(() => {
+        failureElement.textContent = " ";
+      }, 2000);
+    }
+  });
+
+window.addEventListener("load", function () {
+  // Hide the spinner once the page is fully loaded
+  document.querySelector(".spinner").style.display = "none";
+});
