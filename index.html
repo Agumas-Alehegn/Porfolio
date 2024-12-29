@@ -744,11 +744,14 @@
             <form
               id="contact_form"
               name="contact"
-              action="#"
               class="py-sm-2 px-sm-4 rounded-2 contact-form"
               method="POST"
               data-netlify="true"
             >
+              <!-- Required hidden input for Netlify Forms -->
+              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="redirect" value="/thank-you.html" />
+
               <input
                 type="text"
                 class="input"
