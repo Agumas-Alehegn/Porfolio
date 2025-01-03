@@ -97,3 +97,12 @@ ul li {
   transition: background 0.3s;
   outline: 2px solid #0c6c62;
 }
+.resume-img,
+.qr-wrap {
+  width: 110px !important;
+  height: auto;
+}
+.resume-img img,
+.qr-wrap img {
+  width: 100% !important;
+}

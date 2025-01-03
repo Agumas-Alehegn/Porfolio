@@ -304,12 +304,13 @@
   color: #fff;
   transition: color 0.3s ease;
 }
-
+.footer-nav .container .contact-me div a,
 .footer-nav .container .contact-me div,
 .footer-nav .container ul li a {
   color: #0c6c62;
   text-decoration: none;
 }
+.footer-nav .container .contact-me div a:hover,
 .footer-nav .container ul li a:hover {
   color: #ea7a0c;
 }
